@@ -1,0 +1,148 @@
+html, body {
+height: 100%;
+}
+* {
+	margin:0;
+	padding:0; 
+}
+header{
+	width: 100%; 
+}
+nav{
+	margin: 20px auto; /* Define el espacio alrededor de los elementos*/ 
+	width: 90%; /* Le Asigna un valor de anchura*/ 
+	max-width: 1500px; /* Limita la anchura maxima de los elementos de bloque*/ 
+}
+nav  ul{
+	list-style: none;
+}
+nav > ul {
+	display: table;
+	width: 100%;
+	background: #000;
+	/*position: relative;*/  /* Posicionamiento, desplaza las cajas respecto a su posición original*/ 
+}
+nav > ul li {
+	display: table-cell; /*  Hace que cualquier elemento se muestre como una celda de una tabla*/
+}
+nav > ul > li > ul{
+	display: block; /*  El comportamiento de un elemento sea como un bloque*/
+	position: absolute; /* Es relativa a su ancestro posicionado más cercano en lugar de ser relativo a la ventana del navegador*/
+	background: #000;
+}
+nav > ul > li:hover > ul{
+	display: block;
+}
+nav > ul > li > ul{
+	display: none; /* Ocultar o mostrar elementos sin elimniarlos ni crearlos  NO DEJARA ESPACIO DONDE EL ELEMENTO SE ENCONTRABA*/
+}
+nav > ul li a {
+	color:#fff;
+	display: block;
+	line-height: 20px; /* Establece la altura de cada linea que fomra el contenido de texto */ 
+	padding: 20px; /*  */ 
+	text-align: center;
+	text-decoration: none;
+}
+nav > ul li a {
+	color:#fff;
+	display: block;
+	line-height: 20px;
+	padding: 20px; /* Establece las zonas de relleno de un elemento */
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	/*
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	*/
+}
+nav > ul > li > ul > li a:hover{
+	background: #5da5a2;
+}
+
+
+
+
+nav > ul > li a span{
+	background: #33b5e5;
+	display: block; /* El comportamiento de un elemento sea como un bloque */ 
+	height: 100%; 	/*Establece la altura de los elementos de bloque*/
+	width: 100%;  /* Establece la anchura de los elementos de bloque */
+	left: 0; /*Indica el desplazamiento entre el borde izquierdo del elemento y la parte izquierda de su elemento contenedor*/
+	position: absolute; 
+	top: -60px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	
+}
+
+.zoe {
+	background: #000;
+	display: block; /* El comportamiento de un elemento sea como un bloque */ 
+	height: 100%; 	/*Establece la altura de los elementos de bloque*/
+	width: 100%;  /* Establece la anchura de los elementos de bloque */
+	left: 0; /*Indica el desplazamiento entre el borde izquierdo del elemento y la parte izquierda de su elemento contenedor*/
+	position: absolute; 
+	top: -60px;
+	background-image: url('../images/zoe.png');
+	background-repeat: no-repeat;	
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	
+}
+
+
+
+.inicio {
+	background: #000;
+	display: block; /* El comportamiento de un elemento sea como un bloque */ 
+	height: 100%; 	/*Establece la altura de los elementos de bloque*/
+	width: 100%;  /* Establece la anchura de los elementos de bloque */
+	left: 0; /*Indica el desplazamiento entre el borde izquierdo del elemento y la parte izquierda de su elemento contenedor*/
+	position: absolute; 
+	top: -60px;
+	background-image: url('../images/inicio.jpg');
+	background-repeat: no-repeat;	
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	
+}
+
+
+.codigo {
+	background: #000;
+	display: block; /* El comportamiento de un elemento sea como un bloque */ 
+	height: 100%; 	/*Establece la altura de los elementos de bloque*/
+	width: 100%;  /* Establece la anchura de los elementos de bloque */
+	left: 0; /*Indica el desplazamiento entre el borde izquierdo del elemento y la parte izquierda de su elemento contenedor*/
+	position: absolute; 
+	top: -60px;
+	background-image: url('../images/codigo.jpg');
+	background-repeat: no-repeat;	
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	
+}
+
+
+nav > ul > li a:hover > span{
+	top:0;  /*Indica el desplazamiento entre el borde superior del elemento y la parte superior de su elemento contenedor*/
+}
+
+
